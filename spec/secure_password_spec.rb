@@ -11,7 +11,6 @@ describe 'App' do
   end
 
   describe "Signing Up" do
-
     it "displays Sign Up Page" do
       get '/signup'
       expect(last_response.body).to include('Username:')
@@ -35,7 +34,6 @@ describe 'App' do
       follow_redirect!
       expect(last_response.body).to include('Login')
     end
-
   end
 
   describe "Logging In" do
